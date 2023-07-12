@@ -1,0 +1,52 @@
+.carousel {
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+  
+  .delete-btn {
+    margin-top: 5px;
+  }
+  .button {
+    position: relative
+}
+
+.button button {
+    background-color: #ff8a00;
+    border: none;
+    outline: 0;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.button button:hover {
+    background-color: #bf6e0e;
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+.button p {
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.button:hover p {
+    font-weight: bold !important;
+    letter-spacing: 1px !important
+}

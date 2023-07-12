@@ -1,0 +1,24 @@
+<div *ngIf="ishome">
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100 bg-danger">
+  <div class="card rounded-3 ">
+    <div class="top p-3 d-flex justify-content-between"> <h5><b>My Matches</b></h5> <i class="fa fa-ellipsis-v" aria-hidden="true" (click)="gesture()"></i></div>
+    <div id="carouselExampleIndicators" class="carousel slide p-3 " data-bs-ride="carousel">
+        <div class="carousel-indicators"> <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> </div>
+        <div class="carousel-inner">
+<div class="carousel-item" *ngFor="let image of images;let i = index" [ngClass]="{'active': i === 0}"> 
+  <img src="{{ image }}" class="d-block w-100" style="height: 300px;" alt="..." > 
+  <div class="card2 w-100">
+    <h5>Malar</h5>
+    <p>Human Race<br>West st<br>600048<br>chennai</p>
+    <div class="button mt-4"> <button (click)="deleteImage(i)">Yes</button>
+
+  </div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div *ngIf="isgesture">
+  <app-gesture></app-gesture>
+</div>
